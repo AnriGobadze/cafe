@@ -132,12 +132,18 @@
             <button class="modal__close" aria-label="Close contact form">×</button>
             <h3>Get in Touch</h3>
             <p>For inquiries, feedback, or special requests, please use the form below.</p>
-            <form class="contact-form">
-                <div class="form-group"><input type="text" id="name" name="name" required placeholder="Your Name"></div>
-                <div class="form-group"><input type="email" id="email" name="email" required placeholder="Your Email"></div>
-                <div class="form-group"><textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea></div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
+            <form class="contact-form" action="YOUR_UNIQUE_FORMSPREE_URL_HERE" method="POST">
+    <div class="form-group">
+        <input type="text" id="name" name="name" required placeholder="Your Name">
+    </div>
+    <div class="form-group">
+        <input type="email" id="email" name="email" required placeholder="Your Email">
+    </div>
+    <div class="form-group">
+        <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Send Message</button>
+</form>
         </div>
     </div>
     
