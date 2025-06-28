@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olio & Sale | Where Craft Meets Comfort</title>
+    <meta name="description" content="Experience the art of Mediterranean dining at Olio & Sale. A premium cafe experience with artisanal coffee, fresh cuisine, and an unforgettable ambiance.">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- JavaScript (deferred for performance) -->
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__container">
+            <a href="#home" class="header__logo nav-link" data-view="home">Olio & Sale</a>
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link" data-view="home">Home</a></li>
+                    <li><a href="#menu" class="nav-link" data-view="menu">Menu</a></li>
+                    <li><a href="#" id="contact-nav-link" class="nav-link contact-link">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" aria-label="Toggle mobile menu">
+                <span class="hamburger__bar"></span>
+                <span class="hamburger__bar"></span>
+                <span class="hamburger__bar"></span>
+            </button>
+        </div>
+    </header>
+
+    <div class="page-overlay"></div>
+
+    <main>
+        <!-- Home View -->
+        <div id="home-view" class="view">
+            <section id="home" class="hero">
+                <div class="hero__content">
+                    <p class="hero__subtitle animate-item">A TRIBUTE TO MEDITERRANEAN TRADITION</p>
+                    <h1 class="hero__title animate-item">Where Craft Meets Comfort</h1>
+                </div>
+            </section>
+            <section class="menu-preview-section content-section">
+                <div class="container">
+                    <div class="section-title-wrapper animate-item">
+                        <h2 class="section-heading">Signature Dishes</h2>
+                        <p class="section-description">A curated selection from our kitchen's finest, celebrating authentic Mediterranean flavors.</p>
+                    </div>
+                    <div class="menu-preview__grid">
+                        <div class="menu-card animate-item">
+                            <div class="menu-card__header"><h4>Lamb Ragu Pappardelle</h4><span class="price">$32</span></div>
+                            <p class="menu-card__description">Slow-braised lamb ragu with wide pappardelle pasta and pecorino cheese.</p>
+                        </div>
+                        <div class="menu-card animate-item">
+                            <div class="menu-card__header"><h4>Branzino al Sale</h4><span class="price">$38</span></div>
+                            <p class="menu-card__description">Whole salt-baked sea bass, filleted tableside, with lemon and herbs.</p>
+                        </div>
+                        <div class="menu-card animate-item">
+                            <div class="menu-card__header"><h4>Olive Oil Cake</h4><span class="price">$14</span></div>
+                            <p class="menu-card__description">A simple, moist cake with citrus zest, served with whipped mascarpone.</p>
+                        </div>
+                    </div>
+                    <div class="menu-preview__cta animate-item">
+                        <button id="view-full-menu-btn" class="btn btn-primary">See Full Menu</button>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- Full Menu View -->
+        <div id="menu-view" class="view">
+            <section id="menu" class="full-menu-section content-section">
+                <div class="container">
+                    <div class="section-title-wrapper animate-item">
+                        <h2 class="section-heading">Our Culinary Journey</h2>
+                        <p class="section-description">Explore our menu, a celebration of fresh, seasonal, and authentic ingredients.</p>
+                    </div>
+                    <div class="menu__filters animate-item">
+                        <button class="btn-filter active" data-filter="all">All</button>
+                        <button class="btn-filter" data-filter="antipasti">Antipasti</button>
+                        <button class="btn-filter" data-filter="mains">Mains</button>
+                        <button class="btn-filter" data-filter="dolci">Desserts</button>
+                    </div>
+                    <div class="menu__grid">
+                        <!-- Dynamically populated -->
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    
+    <footer class="footer">
+        <div class="container footer__container">
+            <div class="footer__col footer__col--brand">
+                <h4 class="footer__heading">Olio & Sale</h4>
+                <p>A tribute to Mediterranean tradition, reimagined with a modern touch.</p>
+            </div>
+            <div class="footer__col">
+                <h4 class="footer__heading">Follow Us</h4>
+                <div class="footer__social">
+                    <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+                 <a href="#" id="contact-footer-link" class="footer__contact-link">Contact Us</a>
+            </div>
+        </div>
+        <div class="footer__bottom-bar">
+            <p>© 2024 Olio & Sale. All Rights Reserved. | Powered by <a href="https://osgweb.ge/#hero"><img src="OsgPhoto.png" alt="OSG_Agency_Logo"></a></p>
+        </div>
+    </footer>
+
+    <div id="contact-modal" class="modal">
+        <div class="modal__overlay"></div>
+        <div class="modal__content">
+            <button class="modal__close" aria-label="Close contact form">×</button>
+            <h3>Get in Touch</h3>
+            <p>For inquiries, feedback, or special requests, please use the form below.</p>
+            <form class="contact-form">
+                <div class="form-group"><input type="text" id="name" name="name" required placeholder="Your Name"></div>
+                <div class="form-group"><input type="email" id="email" name="email" required placeholder="Your Email"></div>
+                <div class="form-group"><textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea></div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+</html>
