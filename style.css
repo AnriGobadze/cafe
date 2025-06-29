@@ -158,8 +158,9 @@ body.nav-open .hamburger__bar:nth-child(3) { transform: translateY(-8px) rotate(
 .footer__social a:hover { opacity: 1; transform: translateY(-3px); }
 .footer__contact-link { text-decoration: none; color: var(--accent-color); font-weight: 500; transition: opacity 0.3s; }
 .footer__contact-link:hover { opacity: 0.8; }
-.footer__bottom-bar { padding: 1.5rem 0; text-align: center; border-top: 1px solid rgba(255, 255, 255, 0.1); font-size: 0.9rem; opacity: 0.7; }
+.footer__bottom-bar {padding: 1.5rem 0; text-align: center; border-top: 1px solid rgba(255, 255, 255, 0.1); font-size: 0.9rem; opacity: 0.7; }
 .footer__bottom-bar img {
+  margin-left:5px;
   display: inline-block;
   height: 30px;
   vertical-align: middle;
